@@ -1,0 +1,47 @@
+# ==============================================================================
+# Git Ignore File for IoT & Blockchain Chemical Tracking Project
+# ==============================================================================
+
+# --- General ---
+# Log files
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment variables file - VERY IMPORTANT to keep secrets out of the repo
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# --- Node.js / Dependencies ---
+# Dependency directories
+node_modules/
+
+# --- Frontend (React) ---
+# Build output
+/frontend/build
+/frontend/dist
+
+# --- Firmware (PlatformIO) ---
+# PlatformIO specific files and directories
+.pio/
+.vscode/
+
+# --- Operating System Files ---
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+
+# --- IDEs ---
+# VS Code specific settings (user-specific)
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
